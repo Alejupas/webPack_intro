@@ -10,3 +10,34 @@ sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
 sukompiliavimas kurimui (development mode) - IIFE imediately invoked function expression
  npx webpack --mode development
 
+4. pasirasom dev ir build modus: package.json pasirasom new: 
+"scripts": {
+    "start": "npm install",
+    "dev": "webpack --mode development", // developinant
+    "build": "webpack --mode production" // produkcijai
+  },
+  ir npm run build
+uzsivadinam shortcutus prie key value.. naudojam terminale
+  =========================
+atsisiuntus is githubo destytojo, neturim node_modules, reik npm install ir npm run(ir gitignore cj):
+  git clone https://
+  npm install
+  npm run <kazkas>
+  =========================
+https://webpack.js.org/plugins/html-webpack-plugin/
+
+5. idiegiam html plugina:
+npm install --save-dev html-webpack-plugin
+
+6. pasikuriu webpack.config.js ir i ji ikelt: 
+
+const HtmlWebpackPlugin = require('html-webpack-plugin'); //is node_modules paima
+const path = require('path');
+
+pagal nutylejima webpackas main faila ima index.js kaip ENTRY POINT
+
+module.exports = {
+  entry: {},
+  output: {},
+  plugins: [],
+};
