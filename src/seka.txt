@@ -1,0 +1,4 @@
+1. instaliuojam webPack
+npm install webpack webpack-cli --save-dev
+
+2. create .gitignore and add to it node_modules
