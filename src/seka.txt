@@ -2,3 +2,11 @@
 npm install webpack webpack-cli --save-dev
 
 2. create .gitignore and add to it node_modules
+
+3. iskvieciam webpacka, paruosimas produkcijai:
+sugeneruojam optimalius failus (is src) i viena: (folder dist, main.js):
+ npx webpack --mode production
+
+sukompiliavimas kurimui (development mode) - IIFE imediately invoked function expression
+ npx webpack --mode development
+
