@@ -11,5 +11,13 @@
     "intro"
   ],
   "author": "M.K.",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alejupas/webPack_intro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alejupas/webPack_intro/issues"
+  },
+  "homepage": "https://github.com/Alejupas/webPack_intro#readme"
 }
