@@ -10,7 +10,7 @@ module.exports = {
   output: {
     // isvesties laukas - is entry bus paimta ir ideta i output
     filename: "main.bundle.js",
-    path: path.resolve(__dirname, "./dist"),
+    path: path.resolve(__dirname, "dist"),
   },
-  plugins: [],
+  plugins: [new HtmlWebpackPlugin()],
 };
