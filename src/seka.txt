@@ -44,7 +44,7 @@ module.exports = {
 
 7. ENTRY & OUTPUT CONFIG
 rename index.js to app.js 
-webpack.config.js faile, module.export nurisodom entry ir output,prie plugin irgi prisidedam HtmlWebpackPlugin(). istrinam dist folderyje main.js, ir webpacke prie filename main.bundle.js isimetam, npm run dev arba npm run build, ir vel istrintas dist fodleryje failas main.js, atsiranda naujas, kaip main,bundle,js. dasidedu ties plugin> title: "blabla" 
+webpack.config.js faile, module.export nurisodom entry ir output,prie plugin irgi prisidedam HtmlWebpackPlugin(). istrinam dist folderyje main.js, ir webpacke prie filename main.bundle.js isimetam, npm run dev arba npm run build, ir vel istrintas dist fodleryje failas main.js, atsiranda naujas, kaip main.bundle,js. dasidedu ties plugin> title: "blabla" 
 vel npm run build, ir atsivaizduoja naujam sukurtam index html faile title, dist folderyje
 
 8. pridejom prie webpack.config.js , prie plugins:
