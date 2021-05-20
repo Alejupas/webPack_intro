@@ -42,5 +42,6 @@ module.exports = {
   plugins: [],
 };
 
-7. rename index.js to app.js 
+7. ENTRY & OUTPUT CONFIG
+rename index.js to app.js 
 webpack.config.js faile, module.export nurisodom entry ir output, istrinam dist folderyje main.js, ir webpacke prie filename main.bundle.js isimetam, npm run dev arba npm run build, ir vel istrintas dist fodleryje failas main.js, atsiranda naujas, kaip main,bundle,js
