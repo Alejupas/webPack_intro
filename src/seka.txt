@@ -117,3 +117,9 @@ devServer: {
  =====================================================================
 
  20. package.json >scripts  , change dev to :"build:dev": "webpack",
+
+21. newMiniCssExtract Plugin, install :
+npm install --save-dev mini-css-extract-plugin
+
+prie webpack.prod.js , prie plugins idet virsuj :new MiniCssExtractPlugin(),
+tada module>rules>use , ir vietoj pirmo, idet MiniCssExtractPlugin.loader
