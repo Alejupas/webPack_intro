@@ -3,7 +3,7 @@ const path = require("path");
 
 module.exports = {
   mode: "development",
-  devtool: false, //kai sukompiliuojam, main bundle kad geriau suprasti koda
+  devtool: "source-map", //kai sukompiliuojam, main bundle kad geriau suprasti koda
   devServer: {
     contentBase: "./dist",
   },

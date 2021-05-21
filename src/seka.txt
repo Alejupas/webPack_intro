@@ -99,4 +99,5 @@ devServer: {
 
   17. package.json prie scripts insert: "serve": "webpack serve --open",
 
-  
+  18. SOURCE MAP idedam i konfiguracija
+  webpack.config.js > export.modules> devtool pakeist i "source-map"
