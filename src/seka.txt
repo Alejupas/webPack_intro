@@ -79,4 +79,4 @@ use: rasom kuriuos css webpacko dependencies naudosim, tam kas ends in .css
       },
 
 14.  webpack.config.js, export.modules virsuje pridedam:
- devtool: "none", //kad geriau suprasti koda main.bundle.js dalyje(po npm run dev)
+ devtool: false, //kad geriau suprasti koda main.bundle.js dalyje(po npm run dev)

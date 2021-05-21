@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  devtool: "none", //kai sukompiliuojam, main bundle kad geriau suprasti koda
+  devtool: false, //kai sukompiliuojam, main bundle kad geriau suprasti koda
   entry: {
     //nurodom musu programos pagrindini js faila
     //ivesties laukas
