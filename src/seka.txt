@@ -60,3 +60,6 @@ test: /\.css$/i (isimink nice)
 use: rasom kuriuos css webpacko dependencies naudosim, tam kas ends in .css
 
 11. paisrasom ka norim css faile, ir app.js (nes ENTRY POINT) jame rasom prie importu visu virsuj: import "./css/style.css"; ir tada vel terminale npm run dev(ar build). pasikeicia index.html stilius!
+
+12. install babel: npm install -D babel-loader @babel/core @babel/preset-env
+(-D is same as --save)
