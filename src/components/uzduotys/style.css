@@ -19,3 +19,8 @@
   border: 1px solild black;
   border-radius: 15px;
 }
+
+.aside > ul {
+  font-size: 25px;
+  list-style-type: none;
+}

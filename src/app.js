@@ -4,13 +4,10 @@ import "./css/style.css"; //itraukiam css faila i html
 import banner from "./components/banner/ban";
 banner();
 import aside from "./components/uzduotys/script.js";
-
 document.body.append(aside("Aside heading", "Padaryti uzduoti nr:"));
 
 // const path = require("path");
-
 // console.log("path", path.resolve(__dirname));
-
 console.log("add(2, 3, 5) =", add(2, 3, 5));
 
 console.log("say(kazkas):", say("everything how"));
