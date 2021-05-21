@@ -1,7 +1,7 @@
 import add from "./js/add.js";
 import say from "./js/say.js";
 import "./css/style.css"; //itraukiam css faila i html
-import banner from "./banner/ban.js";
+import banner from "./banner/ban";
 // const path = require("path");
 
 // console.log("path", path.resolve(__dirname));

@@ -132,3 +132,7 @@ tada module>rules>use , ir vietoj pirmo, idet MiniCssExtractPlugin.loader
 23. Create banner. folder src> banner> create ban.js ir ban.css
 ban.js pasirasom kompnenta. src>css>style.css banerio css
 app.js importinam is ban.js kompnenta. here we go.
+
+note** 
+ban.js > virsuj: import "./ban.css"; o ban.css apsirasom banerio stiliu.
+vis tiek viskas bus po npm run build sucompilinta i dist folderi, style.css bendra.

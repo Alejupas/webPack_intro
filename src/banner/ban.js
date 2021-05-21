@@ -1,3 +1,5 @@
+import "./ban.css";
+
 function banner() {
   const bannerDiv = document.createElement("div");
   bannerDiv.className = "banner-div";
