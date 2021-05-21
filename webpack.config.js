@@ -4,6 +4,9 @@ const path = require("path");
 module.exports = {
   mode: "development",
   devtool: false, //kai sukompiliuojam, main bundle kad geriau suprasti koda
+  devServer: {
+    contentBase: "./dist",
+  },
   entry: {
     //nurodom musu programos pagrindini js faila
     //ivesties laukas

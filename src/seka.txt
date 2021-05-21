@@ -91,3 +91,12 @@ prie webpack.config.js prie module.exports iskart po rasom:
 mode: "development", tada package.json prie dev: paliekam tik webpack.
 
 install: npm install --save-dev webpack-dev-server
+
+16. prie webpack.config.js prie module.exports, po devtool rasom:
+devServer: {
+    contentBase: "./dist",
+  },
+
+  17. package.json prie scripts insert: "serve": "webpack serve --open",
+
+  
