@@ -22,7 +22,7 @@ uzsivadinam shortcutus prie key value.. naudojam terminale
 atsisiuntus is githubo destytojo, neturim node_modules, reik npm install ir npm run(ir gitignore cj):
   git clone https://
   npm install
-  npm run <kazkas>
+  npm run <kazkas> (nebutina)
   =========================
 https://webpack.js.org/plugins/html-webpack-plugin/
 
@@ -42,7 +42,7 @@ module.exports = {
   plugins: [],
 };
 
-7. ENTRY & OUTPUT CONFIG
+7. ENTRY & OUTPUT & PLUGIN CONFIG
 rename index.js to app.js 
 webpack.config.js faile, module.export nurisodom entry ir output,prie plugin irgi prisidedam HtmlWebpackPlugin(). istrinam dist folderyje main.js, ir webpacke prie filename main.bundle.js isimetam, npm run dev arba npm run build, ir vel istrintas dist fodleryje failas main.js, atsiranda naujas, kaip main.bundle,js. dasidedu ties plugin> title: "blabla" 
 vel npm run build, ir atsivaizduoja naujam sukurtam index html faile title, dist folderyje
