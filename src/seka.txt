@@ -115,3 +115,6 @@ devServer: {
  =====================================================================
  Gali turet daug terminalu running, vienas dev, kitas build , ,kitas live server
  =====================================================================
+
+ 20. rename webpack.config.js to webpack.dev.js, then in package.json edit:
+  "dev": "webpack --config webpack.dev.js",
