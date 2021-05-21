@@ -62,4 +62,21 @@ use: rasom kuriuos css webpacko dependencies naudosim, tam kas ends in .css
 11. paisrasom ka norim css faile, ir app.js (nes ENTRY POINT) jame rasom prie importu visu virsuj: import "./css/style.css"; ir tada vel terminale npm run dev(ar build). pasikeicia index.html stilius!
 
 12. install babel: npm install -D babel-loader @babel/core @babel/preset-env
-(-D is same as --save)
+(-D is same as --save), tai rasom:
+ npm install --save-dev babel-loader @babel/core @babel/preset-env
+
+ 13. webpack.config.js, po rules }, dedam kita {ir jo viduje} :
+ {
+        test: /\.js$/, //.js
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            //kokio senumo js paversti veikianciu in older browsers
+            presets: ["@babel/preset-env"],
+          },
+        },
+      },
+
+14.  webpack.config.js, export.modules virsuje pridedam:
+ devtool: "none", //kad geriau suprasti koda main.bundle.js dalyje(po npm run dev)
