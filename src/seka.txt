@@ -50,3 +50,11 @@ vel npm run build, ir atsivaizduoja naujam sukurtam index html faile title, dist
 8. pridejom prie webpack.config.js , prie plugins:
 template: "src/js/index.html",
 reiskias pridejom h1 i dist> index.html dinamiskai
+
+9. installinam css loaderis is webpacko: 
+npm install --save-dev css-loader style-loader
+tada package.json prie dev dependencies matosi kad atsirado css-loader ir style-loader
+
+10. prie webpack.config.js virs plugins pasidarom modules, jame rules, o jame jau test ir use. suconfigint/prisidet css ir stiliaus loaderius.
+test: /\.css$/i (isimink nice)
+use: rasom kuriuos css webpacko dependencies naudosim, tam kas ends in .css

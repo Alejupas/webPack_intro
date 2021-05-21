@@ -12,6 +12,14 @@ module.exports = {
     filename: "main.bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i, //pritaikom taisykle tik *.css failams
+        use: ["style-loader", "css-loader"], //perdarom .css failus i dist folder
+      },
+    ],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: "This is dynamic Webpack Title",
