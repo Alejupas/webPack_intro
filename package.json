@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm install",
-    "dev": "webpack --config webpack.dev.js",
+    "build:dev": "webpack",
     "serve": "webpack serve --open",
     "build": "webpack --config webpack.prod.js"
   },
