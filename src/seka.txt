@@ -136,3 +136,8 @@ app.js importinam is ban.js kompnenta. here we go.
 note** 
 ban.js > virsuj: import "./ban.css"; o ban.css apsirasom banerio stiliu.
 vis tiek viskas bus po npm run build sucompilinta i dist folderi, style.css bendra.
+
+==================
+1. sukurti aside elementa, dinamiskai su antraste, sarasu, ir mygtuku
+bisk pridet ten kokiu stiliu (atskira direktorija)
+2. 

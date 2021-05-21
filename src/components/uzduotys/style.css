@@ -1,0 +1,21 @@
+.aside {
+  border: 1px solid grey;
+  border-radius: 15px;
+  background-color: beige;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  padding: 40px;
+}
+
+.asideh2 {
+  font-size: 22px;
+  color: red;
+}
+
+.asideBtn {
+  padding: 10px 25px;
+  border: 1px solild black;
+  border-radius: 15px;
+}

@@ -1,7 +1,12 @@
 import add from "./js/add.js";
 import say from "./js/say.js";
 import "./css/style.css"; //itraukiam css faila i html
-import banner from "./banner/ban";
+import banner from "./components/banner/ban";
+banner();
+import aside from "./components/uzduotys/script.js";
+
+document.body.append(aside("Aside heading", "Padaryti uzduoti nr:"));
+
 // const path = require("path");
 
 // console.log("path", path.resolve(__dirname));
@@ -13,5 +18,3 @@ console.log("say(kazkas):", say("everything how"));
 const obj = { age: 30, name: "Bob" };
 const copy = { ...obj, gender: "male" };
 console.log("copy of obj:", copy);
-
-banner();

@@ -13,7 +13,7 @@ function banner() {
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum labore quis provident?";
   const bannerBtn = document.createElement("button");
   bannerBtn.className = "banner-btn";
-  bannerBtn.textContent = "Buy now";
+  bannerBtn.textContent = "Buy now!";
   bannerDiv.append(bannerHeading, bannerP, bannerBtn);
 
   bannerBtn.addEventListener("click", () => {
