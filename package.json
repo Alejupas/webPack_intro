@@ -7,7 +7,7 @@
     "start": "npm install",
     "dev": "webpack",
     "serve": "webpack serve --open",
-    "build": "webpack --mode production"
+    "build": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "webpack",

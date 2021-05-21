@@ -101,3 +101,17 @@ devServer: {
 
   18. SOURCE MAP idedam i konfiguracija
   webpack.config.js > export.modules> devtool pakeist i "source-map"
+
+ =====================================================================
+ IMPORTANT: LIVE SERVER DEV BUS IKI KOL NEPADARYSIM CTRL + C
+ =====================================================================
+
+ 19. dublikuoti  webpack.config.js, rename to: webpack.prod.js
+ delete devServer, rename mode: "production", tada package.json:
+ change "build" to: "webpack --config webpack.prod.js",
+ uzsikomentuojham webpack.prod.js esanti "devtool": ir
+ output>filename: "final.bundle.js", ir outpute, add clean: true,
+
+ =====================================================================
+ Gali turet daug terminalu running, vienas dev, kitas build , ,kitas live server
+ =====================================================================
