@@ -20,10 +20,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      {
         test: /\.css$/i, //pritaikom taisykle tik *.css failams
         //TODO: production env MiniCssExtractPlugin
         use: ["style-loader", "css-loader"], //perdarom .css failus i dist folder
       },
+
       {
         test: /\.js$/, //.js
         exclude: /node_modules/,

@@ -137,7 +137,38 @@ note**
 ban.js > virsuj: import "./ban.css"; o ban.css apsirasom banerio stiliu.
 vis tiek viskas bus po npm run build sucompilinta i dist folderi, style.css bendra.
 
-==================
-1. sukurti aside elementa, dinamiskai su antraste, sarasu, ir mygtuku
-bisk pridet ten kokiu stiliu (atskira direktorija)
-2. 
+24. IMAGES
+regexas kuris grazina visus paveikslelius
+webpack.config.js > pirmas po module>rules: 
+ {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
+      },
+      src> create img folder, imetam ten img. npm run build.dev, ir atsivaizduoja dome. globaliam style.css pasitvarkom max-width (kad responsive butu)
+
+25. ImageMinimizerPlugin from webpack
+installinam  imagemin plugins for lossy optimization:
+npm install imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo --save-dev
+webpack.prod.js importinam pradzioje: 
+const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
+from https://webpack.js.org/plugins/image-minimizer-webpack-plugin/
+ir ties plugins sukurt virsuj nauja plugin:
+  new ImageMinimizerPlugin({
+      filename: "images/[name][ext]",
+      plugins: [["mozjpeg", { quality: 70 }]],
+    }),
+
+    is config i prod atsikopinam ir paste ties module> rules virsuj:
+  new ImageMinimizerPlugin({
+      filename: "images/[name].webp",
+      deleteOriginalAssets: true,
+      minimizerOptions: {
+        plugins: [
+          ["imagemin-webp"],
+          ["svgo"],
+          ["gifsicle"],
+          ["pngquant"],
+          ["mozjpeg", { quality: 50 }],
+        ],
+      },
+    }),

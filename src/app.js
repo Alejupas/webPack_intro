@@ -6,12 +6,8 @@ banner();
 import aside from "./components/uzduotys/script.js";
 document.body.append(aside("Aside heading", "Padaryti uzduoti nr:"));
 
-// const path = require("path");
-// console.log("path", path.resolve(__dirname));
-console.log("add(2, 3, 5) =", add(2, 3, 5));
-
-console.log("say(kazkas):", say("everything how"));
-
-const obj = { age: 30, name: "Bob" };
-const copy = { ...obj, gender: "male" };
-console.log("copy of obj:", copy);
+import planet from "./img/planet.jpg";
+console.log("planeta:", planet);
+const img1 = document.createElement("img");
+img1.src = planet;
+document.body.append(img1);
