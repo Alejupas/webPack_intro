@@ -84,3 +84,10 @@ use: rasom kuriuos css webpacko dependencies naudosim, tam kas ends in .css
  =====================================================================
  TRANSPILING: tos pacios kalbos perdarymas i kita versija(senesne pvz)
  =====================================================================
+
+
+15. Webpack Dev Server
+prie webpack.config.js prie module.exports iskart po rasom:
+mode: "development", tada package.json prie dev: paliekam tik webpack.
+
+install: npm install --save-dev webpack-dev-server
