@@ -123,3 +123,12 @@ npm install --save-dev mini-css-extract-plugin
 
 prie webpack.prod.js , prie plugins idet virsuj :new MiniCssExtractPlugin(),
 tada module>rules>use , ir vietoj pirmo, idet MiniCssExtractPlugin.loader
+
+22. webpack.prod.js > plugins: [
+    new MiniCssExtractPlugin({
+      idedam nauja:
+      filename: "style.css", ir tada atsiras dist folderyje sugeneruotas css tavo norimas file name. gali but path: "css/style.css", tada bus matrioshka
+
+23. Create banner. folder src> banner> create ban.js ir ban.css
+ban.js pasirasom kompnenta. src>css>style.css banerio css
+app.js importinam is ban.js kompnenta. here we go.

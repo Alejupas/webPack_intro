@@ -2,3 +2,35 @@ body {
   background-color: coral;
   color: rgb(78, 38, 0);
 }
+
+.banner-div {
+  border: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 4px 4px 6px white;
+  background-color: rgb(34, 17, 17);
+  width: 50%;
+  text-align: center;
+  padding: 30px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.banner-btn {
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px grey;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: rgb(6, 53, 24);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.banner-btn:hover {
+  background-color: rgb(224, 183, 0);
+  transition: transform 0.2s;
+  transform: scale(1.2);
+  color: black;
+}
