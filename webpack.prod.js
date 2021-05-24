@@ -5,19 +5,16 @@ const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
   mode: "production",
-  // devtool: "source-map", //kai sukompiliuojam, main bundle kad geriau suprasti koda
-
+  // devtool: "source-map", // kad kai sukompiliujam development eitu geriau suprasti koda
   entry: {
-    //nurodom musu programos pagrindini js faila
-    //ivesties laukas
+    //   nurodom musu programos pagrindini js faila
     main: path.resolve(__dirname, "./src/app.js"),
   },
   output: {
-    // isvesties laukas - is entry bus paimta ir ideta i output
     filename: "final.bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
-    assetModuleFilename: "images/[name][ext]", //nurodome kur bus imgs padeti
+    assetModuleFilename: "images/[hash][ext]", // nurodome kur bus padeti musu paveiksleliai
   },
   module: {
     rules: [
@@ -26,17 +23,17 @@ module.exports = {
         type: "asset/resource",
       },
       {
-        test: /\.css$/i, //pritaikom taisykle tik *.css failams
-        //TODO: production env MiniCssExtractPlugin
-        use: [MiniCssExtractPlugin.loader, "css-loader"], //perdarom .css failus i dist folder
+        test: /\.css$/i, // pritaikom taisykle tik *.css failams
+        // TODO: production env MiniCssExtractPlugin
+        use: [MiniCssExtractPlugin.loader, "css-loader"], // perdarom .css failus i dist folderi
       },
       {
-        test: /\.js$/, //.js
+        test: /\.js$/, // .js
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
-            //kokio senumo js paversti veikianciu in older browsers
+            // kokio senummo js mes norim paversti veikianciu senesnese narsyklese
             presets: ["@babel/preset-env"],
           },
         },
@@ -45,15 +42,12 @@ module.exports = {
   },
   plugins: [
     new ImageMinimizerPlugin({
-      filename: "images/[name].webp",
-      deleteOriginalAssets: true,
       minimizerOptions: {
         plugins: [
-          // ["imagemin-webp"],
           ["svgo"],
           ["gifsicle"],
           ["pngquant", { quality: [0.3, 0.6] }],
-          ["mozjpeg", { quality: 70 }],
+          ["mozjpeg", { quality: 50 }],
         ],
       },
     }),
@@ -62,7 +56,7 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       title: "This is dynamic Webpack Title",
-      template: "src/js/template.html",
+      template: "src/template.html",
     }),
   ],
 };
