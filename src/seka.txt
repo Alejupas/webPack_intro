@@ -172,3 +172,22 @@ ir ties plugins sukurt virsuj nauja plugin:
         ],
       },
     }),
+
+ =====================================================================
+GIF ir PNG veikian
+ =====================================================================
+
+ // POST CSS PLUGIN - kad pridetu reikalingus webkit pagal narsykle ir versija
+ npm install --save-dev postcss postcss-loader postcss-preset-env
+ package.json matom tris su postcss dependencies.
+ =====================================================================
+webpack.prod.js >>  use> prideti dar viena po kalbelio "postcss-loader"
+
+susikurt postcss.config.js, jame jau inside rasom
+(cia older browseriams)
+pasikurt .browserslistrc = paskutines narsykliu versijas:
+last 2 versions
+> 0.5% - bandom palaikyt 99.5% narsykliu
+IE 9  - bandom palaikyma pridet IE9 narsykles
+ =====================================================================
+

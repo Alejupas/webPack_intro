@@ -25,7 +25,7 @@ module.exports = {
       {
         test: /\.css$/i, // pritaikom taisykle tik *.css failams
         // TODO: production env MiniCssExtractPlugin
-        use: [MiniCssExtractPlugin.loader, "css-loader"], // perdarom .css failus i dist folderi
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"], // perdarom .css failus i dist folderi
       },
       {
         test: /\.js$/, // .js

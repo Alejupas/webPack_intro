@@ -7,3 +7,10 @@ img {
   max-width: 100%;
   text-align: center;
 }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
