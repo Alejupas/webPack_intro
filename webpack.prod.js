@@ -17,6 +17,7 @@ module.exports = {
     filename: "final.bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    assetModuleFilename: "images/[name][ext]", //nurodome kur bus imgs padeti
   },
   module: {
     rules: [
@@ -51,8 +52,8 @@ module.exports = {
           // ["imagemin-webp"],
           ["svgo"],
           ["gifsicle"],
-          ["pngquant"],
-          ["mozjpeg", { quality: 50 }],
+          ["pngquant", { quality: [0.3, 0.6] }],
+          ["mozjpeg", { quality: 70 }],
         ],
       },
     }),
